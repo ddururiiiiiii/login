@@ -23,6 +23,7 @@ public class ItemController {
 
     private final ItemRepository itemRepository;
 
+
     @GetMapping
     public String items(Model model) {
         List<Item> items = itemRepository.findAll();
